@@ -1230,70 +1230,165 @@ footer {
     color: #FFFFFF;
     text-decoration: underline;
 }
+/* =================================
+UNIVERSAL PHONE RESPONSIVE (320px–480px)
+================================= */
 
-/* Responsive Fix */
-@media (max-width: 768px) {
-    .footer-top, .footer-middle, .footer-newsletter {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+@media (max-width:480px){
+
+/* container */
+.container{
+width:100%;
+padding:0 16px;
 }
 
-/* Responsive Fix */
-@media (max-width: 768px) {
-    .footer-top, .footer-middle, .footer-newsletter {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* NAVBAR */
+nav{
+flex-direction:column;
+gap:15px;
 }
 
-/* Responsive Fix */
-@media (max-width: 992px) {
-    .footer-top, .footer-middle {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-nav { margin: 30px 0; }
-    .subscribe-box { flex-direction: column; width: 100%; }
+.nav-links{
+display:none;
 }
 
-
-/* Responsive: Mobile par ye container hide kar dein taake form kharab na ho */
-@media (max-width: 992px) {
-    .contact-illustration-container {
-        display: none;
-    }
-}
-/* Responsive */
-@media (max-width: 1024px) {
-    .contact-illustration {
-        display: none; /* Mobile/Tablet par hide kar dena behtar hai */
-    }
-    .contact-box {
-        padding: 40px;
-    }
+/* HERO SECTION */
+.hero-section{
+flex-direction:column-reverse;
+text-align:center;
+gap:30px;
+padding:40px 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .testimonial-card { min-width: 300px; }
-    .slider-nav { gap: 40px; }
-}
-/* Responsive */
-@media (max-width: 768px) {
-    .slider-controls { gap: 40px; }
-    .speech-bubble { padding: 25px; }
+.hero-text h1{
+font-size:28px;
+line-height:1.3;
 }
 
-/* Responsive fixes */
-@media (max-width: 1024px) {
-    .team-grid { grid-template-columns: repeat(2, 1fr); }
+.hero-text p{
+font-size:16px;
+max-width:100%;
 }
 
-@media (max-width: 768px) {
-    .team-grid { grid-template-columns: 1fr; }
-    .team-footer { justify-content: center; }
+.hero-image img{
+width:100%;
+max-width:300px;
+}
+
+/* CLIENT LOGOS */
+.clients-bar{
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+/* SERVICES */
+.services-grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.service-card{
+flex-direction:column;
+text-align:center;
+padding:30px 20px;
+gap:20px;
+}
+
+.card-img{
+max-width:140px;
+}
+
+/* CTA SECTION */
+.cta-card{
+flex-direction:column;
+text-align:center;
+padding:35px 20px;
+}
+
+.cta-illustration{
+display:none;
+}
+
+/* CASE STUDIES */
+.case-studies-black-box{
+flex-direction:column;
+padding:35px 20px;
+}
+
+.v-divider{
+width:100%;
+height:1px;
+margin:25px 0;
+}
+
+/* PROCESS SECTION */
+.process-item{
+padding:25px;
+}
+
+.process-number{
+font-size:34px;
+}
+
+.process-title{
+font-size:20px;
+}
+
+/* TEAM SECTION */
+.team-grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+/* TESTIMONIALS */
+.testimonial-card{
+min-width:90%;
+}
+
+.bubble{
+padding:30px;
+}
+
+/* CONTACT */
+.contact-box{
+flex-direction:column;
+}
+
+.illustration-area{
+display:none;
+}
+
+/* FOOTER */
+.footer-top{
+flex-direction:column;
+text-align:center;
+gap:20px;
+}
+
+.footer-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.footer-middle{
+flex-direction:column;
+gap:25px;
+}
+
+.footer-newsletter{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.footer-newsletter input{
+width:100%;
+}
+
+.btn-subscribe{
+width:100%;
+}
+
 }
